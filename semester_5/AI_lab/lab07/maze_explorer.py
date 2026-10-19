@@ -6,6 +6,7 @@ maze = {
     "Room2": ["Exit"],
     "Trap": [],
     "Exit": [],
+    "SecretVault": []  # Added unreachable room for step (b)
 }
 
 def dfs_can_reach(maze, start, exit_room, visited=None):
