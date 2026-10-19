@@ -5,7 +5,6 @@ network = {
     "Zara": ["Bilal", "Hira"],
     "Omar": ["Sara"],
     "Hira": ["Zara"],
-    "Usman": ["Omar"]  # Added person and connection for step (b)
 }
 
 def bfs_shortest_path(graph, start, goal):
