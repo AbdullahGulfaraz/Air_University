@@ -44,8 +44,23 @@ def a_star(start, goal):
         if node in visited:
             continue
         visited.append(node)
+        nodes_explored += 1
+
+        print(
+            "Exploring",
+            node,
+            "path:",
+            path,
+            "g =",
+            get_g(path),
+            "h =",
+            get_h(path),
+            "f =",
+            get_f(path),
+        )
 
         if node == goal:
+            print("Total nodes explored:", nodes_explored)
             return path
 
         for neighbour in warehouse[node]:
