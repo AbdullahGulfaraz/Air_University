@@ -13,6 +13,7 @@ heuristic = {
     "Hostel": 350,
     "Cafeteria": 260,
     "Admin Block": 150,
+    "Sports Ground": 120,
     "Academic Block": 90,
     "Library": 0,
 }
