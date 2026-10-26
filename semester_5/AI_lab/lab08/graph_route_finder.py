@@ -50,7 +50,22 @@ def a_star(start, goal):
         path = frontier.pop(0)
         node = path[-1]
 
+        nodes_explored += 1
+        print(
+            "Exploring",
+            node,
+            "path:",
+            path,
+            "g =",
+            get_g(path),
+            "h =",
+            get_h(path),
+            "f =",
+            get_f(path),
+        )
+
         if node == goal:
+            print("Total nodes explored:", nodes_explored)
             return path
 
         for neighbour in graph[node]:
